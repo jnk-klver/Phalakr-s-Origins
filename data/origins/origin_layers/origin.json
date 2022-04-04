@@ -1,0 +1,8 @@
+{
+    "replace": true,
+    "origins": [
+        "phalakros:zeus",
+        "phalakros:hades",
+        "phalakros:poseidon"
+    ]
+}

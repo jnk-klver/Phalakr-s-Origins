@@ -1,0 +1,16 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    
+    "mestizo_starterpack": {
+        "type": ""
+    },
+
+    "favor_del_tito_hades": {
+        "type": "apoli:action_when_damage_taken",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "set"
+        }
+    }
+}
