@@ -1,0 +1,22 @@
+{
+    "replace": false,
+    "values": [
+        "wooden_axe",
+        "stone_axe",
+        "golden_axe",
+        "additionaladditions:rose_gold_axe",
+        "copperarmorandtools:copperaxe",
+        "copperarmorandtools:copperaxe_1",
+        "copperarmorandtools:copperaxe_2",
+        "copperarmorandtools:copperaxe_3",
+        "copperarmorandtools:ncopperaxe",
+        "iron_axe",
+        "emeraldequipment:emerald_axe",
+        "diamond_axe",
+        "netherite_axe",
+        "additionaladditions:glided_netherite_axe",
+        "botania:manasteel_axe",
+        "botania:elementium_axe",
+        "botania:terra_axe"
+    ]
+}

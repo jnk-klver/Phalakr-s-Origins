@@ -1,0 +1,21 @@
+{
+    "replace": false,
+    "values": [
+        "wooden_hoe",
+        "stone_hoe",
+        "golden_hoe",
+        "additionaladditions:rose_gold_hoe",
+        "copperarmorandtools:copperhoe",
+        "copperarmorandtools:copperhoe_1",
+        "copperarmorandtools:copperhoe_2",
+        "copperarmorandtools:copperhoe_3",
+        "copperarmorandtools:ncopperhoe",
+        "iron_hoe",
+        "emeraldequipment:emerald_hoe",
+        "diamond_hoe",
+        "netherite_hoe",
+        "additionaladditions:glided_netherite_hoe",
+        "botania:manasteel_hoe",
+        "botania:elementium_hoe"
+    ]
+}
