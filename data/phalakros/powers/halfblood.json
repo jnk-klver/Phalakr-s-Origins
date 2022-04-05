@@ -3,14 +3,108 @@
     "type": "origins:multiple",
     
     "mestizo_starterpack": {
-        "type": ""
+        "type": "origins:action_on_callback",
+        "entity_action_chosen": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:give",
+                    "stack": {
+                        "item": "copperarmorandtools:coppersword"
+                    },
+                    "preferred_slot": "offhand",
+                    "item_action": {
+                        "type": "origins:modify",
+                        "modifier": "phalakros:ini-sword"
+                    }
+                },
+                {
+                    "type": "origins:give",
+                    "stack": {
+                        "item": "leather_chestplate"
+                    },
+                    "preferred_slot": "chest",
+                    "item_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify",
+                                "modifier": "phalakros:chb_shirt-name"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "phalakros:chb_shirt-color"
+                            },
+                            {
+                                "type": "origins:modify",
+                                "modifier": "phalakros:chb_shirt-lore"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:give",
+                    "stack": {
+                        "item": "leather_boots"
+                    },
+                    "preferred_slot": "feet"
+                }
+            ]
+        },
+        "execute_chosen_when_orb": true
     },
 
-    "favor_del_tito_hades": {
-        "type": "apoli:action_when_damage_taken",
+    "first_spawn": {
+        "name": "Favor del tito Hades",
+        "description": "Hades permite a los semidioses salir del inframundo tras morir. No va a impedirte salir, pero tampoco creas que va a sacarte de la manita...",
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": false
+        },
+        "hidden": false,
+        "max_action": {
+            "type": "origins:grant_power",
+            "power": "phalakros:respawn",
+            "source": "phalakros:tito_hades"
+        },
+        "min_action": {
+            "type": "origins:revoke_power",
+            "power": "phalakros:respawn",
+            "source": "phalakros:tito_hades"
+        }
+    },
+
+    "set_re-spawn": {
+        "type": "origins:action_on_callback",
+        "entity_action_added": {
+            "type": "origins:delay",
+            "ticks": 20,
+            "action": {
+                "type": "origins:change_resource",
+                "resource": "phalakros:halfblood_first_spawn",
+                "change": 1,
+                "operation": "set"
+            }
+        },
+        "entity_action_respawned": {
+            "type": "origins:change_resource",
+            "resource": "phalakros:halfblood_first_spawn",
+            "change": 1,
+            "operation": "set"
+        },
+        
+        "hidden": false
+    },
+    "overwrite_bed": {
+        "type": "origins:action_on_wake_up",
         "entity_action": {
-            "type": "origins:execute_command",
-            "command": "set"
+            "type": "origins:change_resource",
+            "resource": "phalakros:halfblood_first_spawn",
+            "change": 1,
+            "operation": "set"
         }
     }
 }

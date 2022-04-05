@@ -1,0 +1,10 @@
+{
+    "function": "set_lore",
+    "lore": [
+        {
+            "text": "Lleva escrito \"Camp Half-Blood\" en el pecho, y debajo hay un dibujo de un pegaso.",
+            "color": "orange",
+            "italic": true
+        }
+    ]
+}
